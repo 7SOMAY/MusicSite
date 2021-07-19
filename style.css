@@ -3,17 +3,23 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    background-color: rgb(22, 19, 19);
+}
+.container{
 
-.container nav{
-    background-color: #0f213f;
+}
+nav{
+    background-color: #052253;
     width: 100%;
     margin: auto;
     padding: 13px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: 80%;
+    opacity: 90%;
     position: fixed;
+    z-index: 100000;
 }
 .image1{
     height: 100vh;
@@ -74,7 +80,7 @@ nav a::after{
     display: block;
     height: 2px;
     width: 0%;
-    background-color: #96BAFF;
+    background-color: #5b8be4;
     border-radius: 0px 0px 100px 100px;
     position: relative;
     top: 2px;
@@ -84,33 +90,54 @@ nav a:hover::after{
     width: 100%;
 }
 .image2{
+    text-align: center;
+    top: 7px;
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
     background-image: url(images/1.jpg);
-}
-.image2 img{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    top: 205px;
-    left: 55%;
-    float: left;
-    cursor: pointer;
-    transition: 500ms;
-}
-.image2 img:hover{
-    height: 110px;
-    width: 110px;
-    top: 195px;
+    opacity: 95%;
 
 }
-.image2 h3{
+.icon-content{
     position: absolute;
-    color: white;
-    font-size: 50px;
-    margin: auto 0 auto 250px;
-    top: 223px;
+    height:fit-content;
+    width: 44%;
+    margin: 17% 30%;
 }
+.icon-content span{
+    color: #FDDB3A;
+}
+#icon{
+    width: 15%;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    opacity: 85%;
+}
+.image2 h3{
+    color: #F4F6FF;
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+#icon:hover {
+    width: 16%;
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
