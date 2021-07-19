@@ -98,6 +98,12 @@ nav a:hover::after{
     top: 205px;
     left: 55%;
     float: left;
+    cursor: pointer;
+    transition: 500ms;
+}
+.image2 img:hover{
+    height: 110px;
+    width: 110px;
 
 }
 .image2 h3{
