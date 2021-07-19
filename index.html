@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Righteous&family=Roboto+Mono&family=Roboto:wght@500;900&family=Tourney&display=swap" rel="stylesheet">
+    <title>beatables</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image1">
+            <div class="content">
+                <h1><span>F</span>eel <span>T</span>he <span>B</span>eats!</h1>
+            </div>
+            <nav>
+                <img class="b-logo" src="images/b-logo.png" alt="">
+                <img  class="beatables" src="images/logo.png" alt="">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SPECIFICATIONS</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">CONNECT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container2">
+            <div class="image2">
+                <img src="images/play.png" id="icon">
+                <h3>Play the Bass Booster</h3>
+            </div>
+            
+        </div>
+        
+    </div>
+<audio id="mySong">
+    <source src="audio.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function (){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = images/play.png;
+        }
+        else{
+            mySong.pause();
+            icon.src = images/paused.png;
+        }
+    }
+
+</script>
+</body>
+</html>
