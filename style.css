@@ -104,6 +104,7 @@ nav a:hover::after{
 .image2 img:hover{
     height: 110px;
     width: 110px;
+    top: 195px;
 
 }
 .image2 h3{
