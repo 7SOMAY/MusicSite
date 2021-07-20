@@ -19,13 +19,13 @@
             </div>
             <nav>
                 <img class="b-logo" src="images/b-logo.png" alt="">
-                <img  class="beatables" src="images/logo.png" alt="">
+                <img  id="beatables" src="images/logo.png" alt="">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SPECIFICATIONS</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">CONNECT</a></li>
+                    <li><a href="#" class="nav-items">HOME</a></li>
+                    <li><a href="#" class="nav-items">ABOUT</a></li>
+                    <li><a href="#" class="nav-items">SPECIFICATIONS</a></li>
+                    <li><a href="#" class="nav-items">PRODUCTS</a></li>
+                    <li><a href="#" class="nav-items">CONNECT</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,6 +43,7 @@
 <script>
     var mySong = document.getElementById("mySong");
     var icon = document.getElementById("icon");
+    var beatables = document.getElementById("beatables");
 
     icon.onclick = function (){
         if(mySong.paused){
@@ -54,7 +55,9 @@
             icon.src = "images/play.png";
         }
     }
-
+    beatables.onclick = function(){
+        window.location.href = "#";
+    }
 </script>
 </body>
 </html>

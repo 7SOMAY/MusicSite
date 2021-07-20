@@ -11,6 +11,7 @@ body{
 }
 nav{
     background-color: #042358;
+    filter: blur();
     width: 100%;
     margin: auto;
     padding: 8px 0;
@@ -19,7 +20,7 @@ nav{
     justify-content: space-between;
     opacity: 90%;
     position: fixed;
-    z-index: 100000;
+    z-index: 1;
 }
 .image1{
     height: 100vh;
@@ -28,6 +29,7 @@ nav{
     background-position: center;
     position: relative;
     background-image: url(images/2.jpg);
+    
 }
 .content{
     color: #ffecec;
@@ -50,7 +52,7 @@ span{
     transition: 1s;
     cursor: pointer;
 }
-.beatables{
+#beatables{
     height: 15%;
     width: 15%;
     cursor: pointer;
@@ -59,14 +61,14 @@ span{
     top: 2px;
     transition: 0.2s ease;
 }
-.beatables:hover{
+#beatables:hover{
     width: 15.5%;
 }
 nav ul li{
     list-style: none;
     display: inline-block;
 }
-nav ul li a{
+.nav-items{
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -76,7 +78,7 @@ nav ul li a{
     position: relative;
     right: 20px;
 }
-nav a::after{
+.nav-items::after{
     content: '';
     display: block;
     height: 2px;
@@ -87,10 +89,10 @@ nav a::after{
     top: 2px;
     transition: 250ms ease-in-out;
 }
-nav a:hover{
+.nav-items:hover{
     color: #dddddd;
 }
-nav a:hover::after{
+.nav-items:hover::after{
     width: 100%;
 }
 .image2{
